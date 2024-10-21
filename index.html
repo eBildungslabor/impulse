@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/pico.min.css">
+    <title>Kreativitätsimpulse für Lernideen</title>
+    <script>
+        const impulse = [
+            "Was wäre für eine leistungsschwache Schülerin wichtig?",
+            "Wie würden wir die Herausforderung in 30 Jahren lösen?",
+            "Was würde eine sehr erfahrene Lehrkraft vorschlagen?",
+            "Was würden die Lernenden selbst vorschlagen?",
+            "Was würden wir machen, wenn Geld keine Rolle spielen würde?",
+            "Wie könnten wir das Problem aus der Perspektive der Eltern betrachten?",
+            "Was würde ein Quereinsteiger im Bildungssystem dazu sagen?",
+            "Welche Lösung wäre völlig unkonventionell, aber wirksam?",
+            "Wie könnten digitale Tools die Lernumgebung verbessern?",
+            "Wie könnte uns die Natur inspirieren, um diese Lernidee zu entwickeln?",
+            "Wie könnte die Herausforderung im Team gelöst werden?",
+            "Was würde ein Schüler mit besonderen Bedürfnissen vorschlagen?",
+            "Wie könnte man das Problem ohne jegliche Technologie lösen?",
+            "Wie könnte eine Lösung aussehen, die komplett auf Kollaboration basiert?",
+            "Welche Ideen kommen auf, wenn wir uns die Herausforderung als Spiel vorstellen?",
+            "Was würde eine Lernplattform der Zukunft anbieten, um das Problem zu lösen?",
+            "Wie könnte die Schule der Zukunft aussehen, um diese Herausforderung anzugehen?",
+            "Wie könnte eine Lösung aussehen, die komplett auf Lernfreude basiert?",
+            "Was wäre die einfachste Möglichkeit, dieses Problem zu lösen?",
+            "Wie würden wir vorgehen, wenn die Lernenden selbst die Unterrichtsplanung übernehmen würden?",
+            "Was würde passieren, wenn wir die Herausforderung völlig anders definieren würden?",
+            "Wie könnte eine Lösung für diese Herausforderung im außerschulischen Kontext aussehen?",
+            "Was würde ein Bildungsexperte aus einem anderen Land dazu sagen?",
+            "Wie könnte uns ein wissenschaftliches Experiment helfen, neue Erkenntnisse zu gewinnen?",
+            "Was könnten wir von der Kunstwelt lernen, um diese Herausforderung kreativ zu lösen?",
+            "Welche Lösung würde in einer Welt ohne Prüfungen sinnvoll erscheinen?",
+            "Was könnte eine völlig digitale Schule in dieser Situation anbieten?",
+            "Wie könnten wir mit einer offenen Lernumgebung experimentieren?",
+            "Wie würden wir das Problem angehen, wenn Zeit keine Rolle spielen würde?",
+            "Was wäre eine Lösung, wenn alle Beteiligten gleichberechtigt entscheiden könnten?",
+            "Wie könnten wir die Herausforderung nur mit den vorhandenen Ressourcen bewältigen?",
+            "Wie könnten wir mehr Partizipation der Lernenden bei der Problemlösung ermöglichen?",
+            "Was würde passieren, wenn wir alles, was wir über das Lernen wissen, vergessen würden?",
+            "Wie könnten wir das Problem mit Hilfe eines interdisziplinären Teams angehen?",
+            "Wie könnte eine Lösung aussehen, die auf das Wohlbefinden der Lernenden fokussiert?",
+            "Was wäre eine Lösung, die das Lernen komplett selbstgesteuert gestaltet?"
+        ];
+
+        function neuerImpuls() {
+            const randomIndex = Math.floor(Math.random() * impulse.length);
+            document.getElementById("article").innerText = impulse[randomIndex];
+        }
+    </script>
+</head>
+
+<body onload="neuerImpuls()">
+
+    <main class="container">
+        <h1>Kreativitätsimpulse für Lernideen</h1>
+
+        <article id="article">
+            <!-- Hier wird ein zufälliger Kreativitätsimpuls angezeigt -->
+        </article>
+
+        <button onclick="neuerImpuls()">Neuer Impuls</button>
+
+    </main>
+
+    <footer class="container">
+        <small>Erstellt von <a href="https://ebildungslabor.de">Nele Hirsch (ebildungslabor)</a> • Lizenz: <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 1.0</a></small>
+    </footer>
+
+</body>
+
+</html>
